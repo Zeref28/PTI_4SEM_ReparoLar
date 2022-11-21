@@ -158,7 +158,6 @@
       $stmt->bindParam(":id", $id);
       
       try {
-        echo "Criando anuncio";
         $stmt->execute();
         $_SESSION["msg"] = "Anúncio removido com sucesso!";
     
@@ -177,12 +176,18 @@
   } else {
     
     $id;
+    $categ;
 
     if(!empty($_GET)) {
-      $id = $_GET["id"];
+      if(isset($_GET["id"]))
+      {
+        $id = $_GET["id"];
+      }
+      elseif(isset($_GET["categ"]))
+       $categ = $_GET["categ"];
     }
 
-    // Retorna o dado de um contato
+    // Retorna oS dadoS de um anúncio
     if(!empty($id)) {
 
       $query = "SELECT * FROM AN_ANUNCIO WHERE PK_ID = :id";
@@ -197,10 +202,13 @@
 
     } else {
 
-      // Retorna todos os contatos
-      $anuncios = [];
+      if(empty($categ) || $categ == 'Todos'){
+        $categ = '';
+      }
 
-      $query = "SELECT * FROM AN_ANUNCIO ORDER BY PK_ID DESC";
+      // Retorna todos os anúncios
+      $anuncios = [];
+      $query = "SELECT * FROM AN_ANUNCIO WHERE DS_CATEGORIA LIKE '" . "%$categ%" . "' ORDER BY PK_ID DESC";
 
       $stmt = $conn->prepare($query);
 

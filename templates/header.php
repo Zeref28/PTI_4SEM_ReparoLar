@@ -10,31 +10,85 @@
   }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reparo Lar</title>
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="<?= $BASE_URL ?>index.php">
-        <img src="<?= $BASE_URL ?>img/logo.png" alt="Agenda">
-      </a>
-      <div>
-        <div class="navbar-nav">
-          <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>index.php">Anúncios</a>
-          <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Anunciar serviço</a>
-        </div>
-      </div>
-    </nav>
-  </header>
 
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icon-->
+    <link rel="icon" href="./img/favicon.png" />
+
+    <!--Stylesheet - Css-->
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   
+
+    <title>ReparoLar - Página Inicial</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/logo_dark.png" alt="Logo dark" />
+            </div>
+
+            <ul class="listLinks">
+                <li><a class="nav-link active" href="<?= $BASE_URL ?>index.php">Home</a></li>
+                <li><a class="nav-link active" href="<?= $BASE_URL ?>create.php">Anuncie</a></li>
+                <li><a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>mural.php">Consultar anúncios</a></li>
+                <li><a class="nav-link active" href="<?= $BASE_URL ?>index.php#whatIsReparoLar" >Sobre Nós</a></li>
+                <li><a class="nav-link active" href="<?= $BASE_URL ?>index.php#contact" >Contato</li>
+            </ul>
+        </nav>
+
+        <div class="navbar nav-mobile">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="./img/logo_dark.png" alt="Logo dark" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ReparoLar - Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Anuncie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>mural.php">Consultar anúncios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

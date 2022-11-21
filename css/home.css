@@ -109,13 +109,189 @@ nav {
 
 #whatIsReparoLar {
     margin-top: 60px;
-    background: rgba(246, 246, 246, 1);
+    background: #f2f2f2;
     padding: 40px 0;
 }
 
 .titleReparoLar {
     margin-top: 10px;
+    background: #f2f2f2;
 }
+
+#descricaoservico {
+    background-color: #f2f2f2;
+}
+
+#descricaogeral {
+    background-color: #f2f2f2;
+  
+}
+
+#whatIsReparoLar {
+    background-color: #f2f2f2;
+  
+}
+
+#figura {
+    background-color: #f2f2f2;
+  
+}
+
+#textodesc {
+    background-color: #f2f2f2;
+}
+
+
+
+/* CSS DO MURAL */
+
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 0px;
+    display: block;
+  
+}
+
+.mural {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.blocomural {
+    background-color: #e4e4e4;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+.blocomural div {
+    background-color: #e4e4e4;
+    margin: 10px;
+
+}
+
+
+.blocomural h1 {
+    color: rgb(47, 47, 47);
+    font-size: 24px ;
+}
+
+.blocomural p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+
+.paginatitulo {
+    display: grid;
+    grid-template-columns: auto 200px 200px;
+    grid-template-rows: 60px;
+    grid-template-areas:
+      "texto1 menu1 menu2";
+    column-gap: 10px;
+    row-gap: 0px;
+    background-color: #ffffff;
+    height: 60px;
+    margin: 6px;
+    
+ }
+
+.paginatitulo  texto1 {
+    grid-area: texto1;
+    color: rgb(47, 47, 47);
+    font-size: 36px;
+    height: 40px;
+
+}
+
+.paginatitulo  menu1 {
+    grid-area: menu1;
+    align-self: center;
+    justify-self: end;
+    padding: 0 12px 0 0;
+}
+
+
+.paginatitulo  menu2 {
+    grid-area: menu2;
+    align-self: center;
+    justify-self: center;
+      
+}
+
+/* CSS DAS PÁGINAS DE EXIBIÇÃO */
+
+.blocoanuncio {
+    display: block;
+    width: 800px;
+    height: auto;
+    background-color: rgb(249, 249, 249);
+    border-radius: 20px;
+
+}
+
+#view-contact-container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #151515;
+  }
+
+  .blocoanuncio h1 {
+    color: rgb(173, 90, 0);
+    font-size: 26px;
+  }
+
+  .blocoanuncio p {
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  #back-link-container {
+    display: block;
+    width: 500px;
+    margin: 0 0 30px 0;
+  }
+  
+  #back-link {
+    border: 1px solid #dd4803;
+    color: #ff0000;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  #back-link:hover {
+    text-decoration: none;
+  }
+  
+  /* CREATE */
+  #create-form,
+  #edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #construcao {
+    font-size: 50px;
+    color:rgb(173, 90, 0);
+  }
+
+
+/* CSS DO FOOTER */
 
 #contact {
     margin-top: 80px;
