@@ -18,7 +18,8 @@ Monica Tomaz De Jesus
  
 ## Requisitos:
 
-Apache,
+Apache
+
 mySQL
 
 ## Instalação:
