@@ -57,7 +57,7 @@ sendo a versão mínima do PHP a 7.
 
 16 - Abrir o endereço "http://localhost/PTI_4SEM_ReparoLar/" no navegador.
 
-## Visualização:
+## Visualização
 
 1 - Ao entrar no site, acessar a opçãop do "Clique aqui" de prestador de serviços
 
