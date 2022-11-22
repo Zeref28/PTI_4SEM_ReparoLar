@@ -59,7 +59,10 @@ sendo a versão mínima do PHP a 7.
 
 ## Visualização
 
-1 - Ao entrar no site, acessar a opçãop do "Clique aqui" de prestador de serviços
+Escolhemos mostrar o fluxo operacional da visão do prestador de serviço, pois haviam mais funcionalidades para se apresentar, 
+segue o passo a passo para encontrar um serviço na aplicação:
+
+1 - Ao entrar no site, acessar a opção do "Clique aqui" de prestador de serviços, ou no "Consultar anúncios" do menu superior.
 
 2 - Ao seguir o passo anterior, você será direcionado para a tela de anúncios, onde é possível filtra-los por categoria.
 
@@ -69,3 +72,5 @@ e o contato do contratante.
 4 - As opções de Whatsapp e e-Mail são interativas, caso deseje utilizar uma mensagem predefinida para entrar em contato com o contratante, basta clicar no link e você será direcionado para uma página com uma mensagem escrita e pronta para envio.
 
 5 - Pensando no mobile, também incluimos um link interativo na opção de telefone, caso utilize o site pelo celular ele abrirá o telefone com o número de contato digitado.
+
+6 - Além disso, no menu superior também temos a aba "Sobre nós", onde contamos um pouco mais sobre a ideia do projeto e a aba "Contato" onde é possível encontrar nosso e-mail.
