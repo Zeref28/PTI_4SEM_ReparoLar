@@ -46,7 +46,7 @@ sendo a versão mínima do PHP a 7.
 
 11 - Voltar para tela do XAMPP.
 
-12- clicar em explorer.
+12 - clicar em explorer.
 
 13 - Abrir a pasta "htdocs".
 
